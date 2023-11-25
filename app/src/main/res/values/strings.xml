@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Cash Register</string>
+    <string name="Missing_Fields">All Fields Should Be Selected</string>
+    <string name="insufficient_qty">No Enough Quantity In The Stock </string>
+
+
+</resources>

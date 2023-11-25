@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:name=".AppItems"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/cach_register"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/cach_register_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CashRegister"
+        tools:targetApi="31">
+        <activity
+            android:name=".HistoryDetailActivity"
+            android:exported="false"
+            android:label="Purches Dtail">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RecycleViewHistoryListActivity" />
+        </activity>
+        <activity
+            android:name=".RecycleViewHistoryListActivity"
+            android:exported="false"
+            android:label="History List">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ManagerPanel" />
+        </activity>
+        <activity
+            android:name=".RestockPage"
+            android:exported="false"
+            android:label="Restock Page">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ManagerPanel" />
+        </activity>
+        <activity
+            android:name=".HistoryList"
+            android:exported="false" />
+        <activity
+            android:name=".ManagerPanel"
+            android:exported="false"
+            android:label="Manager Panel">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

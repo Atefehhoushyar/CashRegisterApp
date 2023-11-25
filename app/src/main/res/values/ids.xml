@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="ProductTxt" type="id" />
+    <item name="TotalTxt" type="id" />
+    <item name="quantityTxt" type="id" />
+    <item name="buttonBY" type="id" />
+</resources>

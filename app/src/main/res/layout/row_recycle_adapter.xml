@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/row_ProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Product Name"
+        android:gravity="left"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/row_Quantity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:id="@+id/row_Quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Quantity"
+        android:gravity="left"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row_ProductName">
+    </TextView>
+    <TextView
+        android:id="@+id/row_totalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:textSize="15sp"
+        android:hint="Total Price"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/row_ProductName"
+        app:layout_constraintTop_toTopOf="@+id/row_ProductName">
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
